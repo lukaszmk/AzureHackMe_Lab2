@@ -1,0 +1,14 @@
+# Local terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.backup
+**/*.tfstate
+**/*.tfstate.backup
+
+# Crash log files
+crash.log
+
+# Override local variables
+*.tfvars

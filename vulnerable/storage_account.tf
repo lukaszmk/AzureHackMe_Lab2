@@ -19,7 +19,7 @@ resource "azurerm_storage_account" "insecure_storage" {
 
 resource "azurerm_storage_container" "backup_container" {
   name                  = "backups"
-  storage_account_id    = azurerm_storage_account.insecure_storage.id
+storage_account_name  = azurerm_storage_account.insecure_storage.name
   container_access_type = "blob" # MISCONFIGURATION 3: Enables anonymous read access for blobs within this container
 }
 
